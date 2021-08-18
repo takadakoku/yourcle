@@ -1,0 +1,112 @@
+ 
+ #introduction{
+     text-align: center;
+     margin-top: 15px;
+     border-bottom: solid 1px  rgb(85, 85, 85);
+     /* ???? */
+     height: auto;
+     min-height: 190px;
+     margin-left: 10px;
+     margin-right: 10px;
+     
+ }
+
+ /* #content{ */
+ 
+ #img {
+	width: 80px;
+	height:80px;
+	object-fit:cover;
+	border-radius:50%;
+	object-position:0px 0px;
+/* ???? */
+    float: left;
+}
+
+#self{
+    width:80%;
+    /* margin-left: 10%; */
+    margin-bottom: 15px;
+    /* ???? */
+    float: left;
+    position: absolute;
+    padding-top: 120px;
+}
+
+#items img{
+    position: relative;
+    width: 31%;
+    height: 100px;
+    top: 0;
+    right: 4%;
+    bottom: 0;
+    left: 2%;
+    margin: 0px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+h1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    /* ???? */
+    float: left;
+    position: absolute;
+    padding-top: 85px;
+}
+#items p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+}
+#self p{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: left;
+}
+
+/* ???? */
+#sns li{
+    float: left;
+    padding-bottom: 200px;
+    
+    display: inline;
+    text-align: center;
+}
+#sns{
+    margin-left: 10px;
+    position: absolute;
+    margin-left: 120px;
+    top: 85px;
+}
+
+.fa-pl{
+    font-size: 25px;
+    margin-left: 10px;
+    padding: .3em 0.30em .3em;
+    border: solid 0.1em #eeeeee;
+    border-radius: 55%;
+    color: #ffaad8;
+}
+.fa-in{
+    font-size: 25px;
+    padding-left: 100%;
+    padding: .3em 0.30em .3em;
+    border: solid 0.1em #eeeeee;
+    border-radius: 55%;
+    margin-left: 30px;
+    color: #ffaad8;
+}
+.fa-tw{
+    font-size: 25px;
+    padding-left: 200%;
+    padding: .3em 0.30em .3em;
+    border: solid 0.1em #eeeeee;
+    border-radius: 55%;
+    margin-left: 30px;
+    color: #ffaad8;
+}

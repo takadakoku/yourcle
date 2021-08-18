@@ -1,0 +1,52 @@
+p{
+    border-bottom:solid 1px #9e9f9f ;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+}
+
+.item{
+    width: 100%;
+    height: 150px;
+    border-bottom: solid 1px #9e9f9f;
+    display: flex;
+}
+a{
+    text-decoration: none;
+  }
+.item i{
+    margin-top: 55px;
+    font-size: 30px;
+    margin-right: 18px;
+    position: absolute;
+    margin-left: 94%;
+}
+
+
+#content img {
+    margin-top:25px ;
+    margin-left: 3%;
+	width:100px;
+	height:100px;
+	object-fit:cover;
+	object-position:0px 0px;
+    border-radius: 5%;
+}
+ 
+.name{
+    width: 70%;
+    height: 50%;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 93px;
+}
+
+
+
+
+.name a{
+   margin-top: 70px;
+}

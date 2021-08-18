@@ -1,0 +1,446 @@
+.button {
+    display       : inline-block;
+    border-radius : 8%;          /* 角丸       */
+    font-size     : 13pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    height: 30px;
+    width: 80px;
+    background    : #ffaad8;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 1px 1px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #ffaad8;    /* 枠の指定 */
+    }
+    .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ffaad8;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+    }
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+/*part2 */
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+a.btn-gradient {
+border-radius: 100vh;
+}
+.btn,
+a.btn,
+button.btn {
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+a.btn-gradient {
+font-weight: normal;
+
+color: #fff;
+border-radius: 0;
+background-image: -webkit-gradient(
+linear,
+left top,
+right top,
+color-stop(40%, #ff3cac),
+to(#562b7c)
+);
+background-image: -webkit-linear-gradient(left, #ff3cac 40%, #562b7c 100%);
+background-image: linear-gradient(90deg, #ff3cac 40%, #562b7c 100%);
+}
+
+a.btn-gradient:after {
+position: absolute;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+content: "";
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+
+background-image: -webkit-gradient(
+linear,
+left top,
+right top,
+from(#ff3cac),
+color-stop(#562b7c),
+to(#2b86c5)
+);
+
+background-image: -webkit-linear-gradient(left, #ff3cac, #562b7c, #2b86c5);
+
+background-image: linear-gradient(90deg, #ff3cac, #562b7c, #2b86c5);
+}
+
+a.btn-gradient span {
+position: relative;
+z-index: 1;
+}
+
+a.btn-gradient:hover {
+color: #fff;
+}
+
+a.btn-gradient:hover:after {
+opacity: 0;
+}
+a.btn-gradient {
+border-radius: 100vh;
+}
+
+/*part3*/
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+a.btn-flat {
+overflow: hidden;
+
+padding: 1.5rem 6rem;
+
+color: #fff;
+border-radius: 0;
+background: #000;
+}
+
+a.btn-flat span {
+position: relative;
+}
+
+a.btn-flat:before {
+position: absolute;
+top: 0;
+left: 0;
+
+width: 150%;
+height: 500%;
+
+content: "";
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+background: #00b7ee;
+}
+
+a.btn-flat:hover:before {
+-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/*part4*/
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* 
+body {
+padding: 30px;
+} */
+
+.btn,
+a.btn,
+button.btn {
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+background: #fff;
+}
+
+a.btn-border-shadow:before {
+position: absolute;
+top: -6px;
+left: -6px;
+
+width: 100%;
+height: 100%;
+
+content: "";
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+
+border: 3px solid #000;
+border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+top: 0;
+left: 0;
+}
+
+a.btn-border-shadow--color {
+border-radius: 0;
+background: yellow;
+}
+
+a.btn-border-shadow--color:before {
+border-radius: 0;
+}
+
+/*part5*/
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+a.btn-custom01 {
+margin-bottom: 0.5rem;
+padding: 0;
+border-radius: 0.75rem;
+}
+
+a.btn-custom01:before {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+content: "";
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+-webkit-transform: translate3d(0, 0.75rem, -1rem);
+transform: translate3d(0, 0.75rem, -1rem);
+
+border: 2px solid #000;
+border-radius: inherit;
+background: #ccc100;
+-webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:after {
+font-family: "Font Awesome 5 Free";
+font-size: 2rem;
+font-weight: normal;
+line-height: 1;
+position: absolute;
+top: calc(50% - 1rem);
+left: 1.5rem;
+margin: 0;
+padding: 0;
+content: "\f0e0";
+}
+
+.btn-custom01-front {
+position: relative;
+display: block;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+border: 2px solid #000;
+border-radius: inherit;
+background: #fff100;
+}
+
+.fa-position-left {
+position: absolute;
+top: calc(50% - 0.5em);
+left: 1rem;
+}
+
+.fa-position-right {
+position: absolute;
+top: calc(50% - 0.5em);
+right: 1rem;
+}
+
+a.btn-custom01:hover {
+-webkit-transform: translate(0, 0.25rem);
+transform: translate(0, 0.25rem);
+background: #fff100;
+}
+
+a.btn-custom01:hover:before {
+-webkit-transform: translate3d(0, 0.5rem, -1rem);
+transform: translate3d(0, 0.5rem, -1rem);
+-webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:hover:after {
+content: "\f2b6";
+}
+
+a.btn-custom01:active {
+-webkit-transform: translate(0rem, 0.75rem);
+transform: translate(0rem, 0.75rem);
+}
+
+a.btn-custom01:active:before {
+-webkit-transform: translate3d(0, 0, -1rem);
+transform: translate3d(0, 0, -1rem);
+-webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:active:after {
+content: "\f2b6";
+}
+
